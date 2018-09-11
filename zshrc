@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/Users/kenneth/.oh-my-zsh"
+  export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -142,7 +142,7 @@ bindkey "^i" expand-or-complete-prefix
 	POWERLEVEL9K_USER_ROOT_BACKGROUND="clear"
 	POWERLEVEL9K_USER_ROOT_FOREGROUND="blue"
 	POWERLEVEL9K_USER_SUDO_BACKGROUND="clear"
-	POWERLEVEL9K_USER_SUDO_BACKGROUND="cyan"
+	POWERLEVEL9K_USER_SUDO_FOREGROUND="cyan"
 
 	POWERLEVEL9K_HOST_LOCAL_BACKGROUND="clear"
 	POWERLEVEL9K_HOST_LOCAL_FOREGROUND="green"
