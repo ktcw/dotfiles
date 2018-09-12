@@ -121,12 +121,15 @@ bindkey "^i" expand-or-complete-prefix
 	POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=""
 	POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=""
 	POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR=""
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user host_joined dir vcs)
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user host_joined dir vcs)
   POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time status_joined)
 
 	POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{green}\u250C\u2500%F{default}"
 	POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{green}\u2514\u203A%F{default} "
 # POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{green}\u2514\uF460%F{default} "
+
+	POWERLEVEL9K_OS_ICON_BACKGROUND="clear"
+	POWERLEVEL9K_OS_ICON_FOREGROUND="green"
 
 	POWERLEVEL9K_DIR_HOME_BACKGROUND="clear"
 	POWERLEVEL9K_DIR_HOME_FOREGROUND="blue"
@@ -168,6 +171,3 @@ bindkey "^i" expand-or-complete-prefix
   ZSH_TMUX_AUTOSTART="false"
 
   source $ZSH/oh-my-zsh.sh
-
-  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
