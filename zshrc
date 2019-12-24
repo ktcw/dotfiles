@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
   export ZSH="/Users/kenneth/.oh-my-zsh"
+	export LANG=en_US.UTF-8
+	export LC_CTYPE=en_US.UTF-8
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -60,7 +62,7 @@
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  sudo git history tmux tmuxinator zsh-autosuggestions
+  sudo git history tmux tmuxinator
 )
 
 # User configuration
@@ -169,5 +171,5 @@ bindkey "^i" expand-or-complete-prefix
 
 # Start ZSH sessions with tmux enabled
   ZSH_TMUX_AUTOSTART="false"
-
+  clear
   source $ZSH/oh-my-zsh.sh
