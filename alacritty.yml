@@ -25,9 +25,9 @@ window:
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
+  # position:
+    # x: 0
+    # y: 0
 
   # Window padding (changes require restart)
   #
@@ -63,7 +63,7 @@ window:
   startup_mode: Windowed
 
   # Window title
-  #title: Alacritty
+  title: Alacritty
 
   # Window class (Linux only):
   #class: Alacritty
@@ -100,21 +100,21 @@ tabspaces: 4
 
 # Font configuration (changes require restart)
 font:
-  # The normal (roman) font face to use.
+  # # The normal (roman) font face to use.
   normal:
-    family: IBMPlexMono Nerd Font Mono
+    family: "Fira Code"
     # Style can be specified to pick a specific face.
-    style: Normal
+    style: Regular
 
-  # The bold font face
+  # # The bold font face
   bold:
-    family: IBMPlexMono Nerd Font Mono
+    family: "Fira Code"
     # Style can be specified to pick a specific face.
     style: Bold
 
-  # The italic font face
+  # # The italic font face
   italic:
-    family: IBMPlexMono Nerd Font Mono
+    family: "Fira Code"
     # Style can be specified to pick a specific face.
     style: Italic
 
@@ -125,7 +125,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 0
+    y: 2
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -153,12 +153,12 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Nord)
+# Colors (Iceberg)
 colors:
   # Default colors
   primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
+    background: '0x161821'
+    foreground: '0xd2d4de'
 
     # Bright and dim foreground colors
     #
@@ -173,8 +173,8 @@ colors:
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   #cursor:
-    text:   '0x2E3440'
-    cursor: '0xD8DEE9'
+    # text:   '0x2E3440'
+    # cursor: '0xD8DEE9'
 
   # Selection colors
   #
@@ -187,25 +187,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x3B4252'
-    red:     '0xBF616A'
-    green:   '0xA3BE8C'
-    yellow:  '0xEBCB8B'
-    blue:    '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan:    '0x88C0D0'
-    white:   '0xE5E9F0'
+    black:   '0x161821'
+    red:     '0xe27878'
+    green:   '0xb4be82'
+    yellow:  '0xe2a478'
+    blue:    '0x84a0c6'
+    magenta: '0xa093c7'
+    cyan:    '0x89b8c2'
+    white:   '0xc6c8d1'
 
   # Bright colors
   bright:
-    black:   '0x4C566A'
-    red:     '0xBF616A'
-    green:   '0xA3BE8C'
-    yellow:  '0xEBCB8B'
-    blue:    '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan:    '0x8FBCBB'
-    white:   '0xECEFF4'
+    black:   '0x6b7089'
+    red:     '0xe98989'
+    green:   '0xc0ca8e'
+    yellow:  '0xe9b189'
+    blue:    '0x91acd1'
+    magenta: '0xada0d3'
+    cyan:    '0x95c4ce'
+    white:   '0xd2d4de'
 
   # Dim colors
   #
@@ -316,7 +316,7 @@ mouse:
     modifiers: None
 
 selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+  semantic_escape_chars: ",â”‚`|:\"' ()[]{}<>"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: false
@@ -328,7 +328,7 @@ cursor:
   # Cursor style
   #
   # Values for `style`:
-  #   - ▇ Block
+  #   - â–‡ Block
   #   - _ Underline
   #   - | Beam
   style: Block
